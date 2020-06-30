@@ -1,0 +1,4 @@
+
+<div>Carrello: {{ cart }} prodotti</div>
+
+<app-product *ngFor="let p of products" (addToCart)="handleAddToCart()" (removeToCart)="handleRemoveToCart()" [product]="p"  (removeProduct)="handleRemoveProduct(p)"></app-product>

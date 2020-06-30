@@ -1,0 +1,3 @@
+<ul>
+    <li *ngFor="let t of todos"><a [routerLink]="['/todos', t.id]">{{ t.id }} - {{ t.title }}</a></li>
+</ul>
